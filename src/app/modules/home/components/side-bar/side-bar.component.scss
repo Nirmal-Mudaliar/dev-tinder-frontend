@@ -1,0 +1,62 @@
+:host {
+  width: 100%;
+  border-right: 1px solid #dbdbdb;
+
+  app-side-bar-header {
+    height: 90px;
+  }
+
+  ::ng-deep {
+    .p-tab {
+      font-size: 16px;
+
+      &.p-tab-active {
+        color: #000;
+      }
+    }
+    .p-tabpanel {
+      .no-matches-found-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .card-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .card {
+            display: flex;
+            height: 162px;
+            width: 125px;
+            border-radius: 10px;
+            background: linear-gradient(32deg, #f50c0c, #245d7e);
+          }
+        }
+
+        .message-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 8px;
+
+          .header-msg, .msg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .header-msg {
+            font-size: 24px;
+            font-weight: 600;
+          }
+
+          .msg {
+            font-size: 16px;
+            
+          }
+        }
+      }
+    }
+  }
+}

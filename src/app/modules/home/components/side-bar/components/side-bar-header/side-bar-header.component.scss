@@ -1,0 +1,22 @@
+:host {
+  background: linear-gradient(32deg, #f50c0c, #245d7e);
+  display: flex;
+  padding: 10px;
+
+  .left-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .profile-img {
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .user-name {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
