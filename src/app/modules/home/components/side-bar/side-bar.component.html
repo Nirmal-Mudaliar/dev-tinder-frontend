@@ -1,0 +1,34 @@
+<app-side-bar-header
+  [userName]="userName"
+  [profilePath]="profilePath"
+>
+</app-side-bar-header>
+<p-tabs value="0">
+  <p-tablist>
+    <p-tab value="0">Matched</p-tab>
+    <p-tab value="1">Messages</p-tab>
+  </p-tablist>
+  <p-tabpanels>
+    <p-tabpanel value="0">
+      <div class="matches-container">
+        @if (matches.length) {
+
+        }
+        @else { 
+          <div class="no-matches-found-container">
+            <div class="card-container">
+              <div class="card"></div>
+            </div>
+            <div class="message-container">
+              <div class="header-msg">Start Matching</div>
+              <div class="msg">{{msg}}</div>
+            </div>
+          </div>
+        }
+      </div>
+    </p-tabpanel>
+    <p-tabpanel value="1">
+      <div class="messages-container"></div>
+    </p-tabpanel>
+  </p-tabpanels>
+</p-tabs>
